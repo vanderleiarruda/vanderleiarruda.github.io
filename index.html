@@ -6,66 +6,148 @@
   <title>Política de Privacidade - Jogo da Velha</title>
   <meta name="description" content="Política de Privacidade do aplicativo Jogo da Velha">
   <style>
-    :root{--bg:#f7f8fb;--card:#ffffff;--accent:#0b5fff;--text:#0b2434}
-    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
-    .container{max-width:880px;margin:48px auto;padding:28px}
-    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 24px rgba(12,24,40,0.06)}
-    h1{margin-top:0;font-size:1.6rem;color:var(--accent)}
-    h2{margin:22px 0 8px;font-size:1.05rem}
-    p,li{line-height:1.6;margin:8px 0}
-    ul{padding-left:1.1rem}
-    footer{margin-top:20px;font-size:0.9rem;color:#556677}
-    .meta{color:#8393a6;font-size:0.95rem;margin-bottom:18px}
-    code{background:#f2f5fb;padding:2px 6px;border-radius:6px}
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    
+    :root {
+      --gradient: linear-gradient(180deg, #5a2ec9, #4a38d0, #3c4fd3, #2f5dd7, #226cda, #1a79de, #1085e1, #0890e4);
+      --primary: #5a2ec9;
+      --secondary: #ffffff;
+      --text: #ffffff;
+      --card-bg: rgba(255, 255, 255, 0.12);
+      --button-bg: #ffffff;
+      --button-text: #5a2ec9;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--gradient);
+      background-attachment: fixed;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 90%;
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      backdrop-filter: blur(12px);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      text-align: center;
+      font-size: 0.95rem;
+      opacity: 0.8;
+      margin-bottom: 24px;
+    }
+
+    section {
+      margin-bottom: 24px;
+      background: rgba(255,255,255,0.06);
+      padding: 16px;
+      border-radius: 12px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      margin-top: 0;
+      color: #ffdd57;
+    }
+
+    p, li {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 14px;
+      background: var(--button-bg);
+      color: var(--button-text);
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      margin-top: 16px;
+      transition: transform 0.2s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      margin-top: 24px;
+      opacity: 0.7;
+    }
   </style>
 </head>
 <body>
   <main class="container">
-    <article class="card" role="article">
-      <header>
-        <h1>Política de Privacidade - Jogo da Velha</h1>
-        <p class="meta">Última atualização: 30 de Setembro de 2025</p>
-      </header>
+    <h1>🔐 Política de Privacidade</h1>
+    <p class="meta">Última atualização: 30 de Setembro de 2025</p>
 
-      <section>
-        <h2>Coleta de Informações</h2>
-        <p>Este aplicativo não coleta, armazena ou compartilha nenhuma informação pessoal dos usuários.</p>
-      </section>
+    <section>
+      <h2>📊 Coleta de Informações</h2>
+      <p>Este aplicativo não coleta, armazena ou compartilha nenhuma informação pessoal dos usuários.</p>
+    </section>
 
-      <section>
-        <h2>Dados Armazenados</h2>
-        <p>O aplicativo armazena apenas:</p>
-        <ul>
-          <li>Pontuação local do jogo (armazenada apenas no dispositivo)</li>
-          <li>Preferências do usuário (armazenadas apenas no dispositivo)</li>
-        </ul>
-        <p>Nenhum dado é enviado para servidores externos.</p>
-      </section>
+    <section>
+      <h2>💾 Dados Armazenados</h2>
+      <p>O aplicativo armazena apenas:</p>
+      <ul>
+        <li>Pontuação local do jogo (armazenada apenas no dispositivo)</li>
+        <li>Preferências do usuário (armazenadas apenas no dispositivo)</li>
+      </ul>
+      <p>Nenhum dado é enviado para servidores externos.</p>
+    </section>
 
-      <section>
-        <h2>Permissões</h2>
-        <p>O aplicativo não requer nenhuma permissão especial do Android.</p>
-      </section>
+    <section>
+      <h2>🔐 Permissões</h2>
+      <p>O aplicativo não requer nenhuma permissão especial do Android.</p>
+    </section>
 
-      <section>
-        <h2>Serviços de Terceiros</h2>
-        <p>O aplicativo não utiliza nenhum serviço de terceiros, analytics ou publicidade.</p>
-      </section>
+    <section>
+      <h2>📉 Serviços de Terceiros</h2>
+      <p>O aplicativo não utiliza nenhum serviço de terceiros, analytics ou publicidade.</p>
+    </section>
 
-      <section>
-        <h2>Alterações nesta Política</h2>
-        <p>Reservamos o direito de atualizar esta política de privacidade. Notificaremos os usuários sobre quaisquer alterações publicando a nova política nesta página.</p>
-      </section>
+    <section>
+      <h2>📜 Alterações nesta Política</h2>
+      <p>Reservamos o direito de atualizar esta política de privacidade. Notificaremos os usuários sobre quaisquer alterações publicando a nova política nesta página.</p>
+    </section>
 
-      <section>
-        <h2>Declaração</h2>
-        <p>Este aplicativo é desenvolvido de forma independente e não está associado a nenhuma empresa ou organização.</p>
-      </section>
+    <section>
+      <h2>👾 Declaração</h2>
+      <p>Este aplicativo é desenvolvido de forma independente e não está associado a nenhuma empresa ou organização.</p>
+    </section>
 
-      <footer>
-        <p>Se tiver dúvidas sobre esta política, entre em contato com o desenvolvedor.</p>
-      </footer>
-    </article>
+    <a href="#" class="button">Voltar ao Jogo</a>
+
+    <footer>
+      <p>© 2025 Jogo da Velha. Todos os direitos reservados.</p>
+    </footer>
   </main>
 </body>
 </html>
