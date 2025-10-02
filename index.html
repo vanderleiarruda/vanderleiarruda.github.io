@@ -19,18 +19,18 @@
     }
 
     html, body {
-      height: 100%;
       margin: 0;
+      padding: 0;
       font-family: 'Inter', sans-serif;
       background: var(--gradient);
       background-attachment: fixed;
       color: var(--text);
+      min-height: 100%;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      justify-content: center; /* centraliza horizontalmente */
     }
 
-    .container {
+    main.container {
       max-width: 420px;
       width: 90%;
       background: var(--card-bg);
@@ -38,6 +38,7 @@
       padding: 32px;
       box-shadow: 0 8px 30px rgba(0,0,0,0.3);
       backdrop-filter: blur(12px);
+      margin: 32px 0; /* adiciona espaço no topo e embaixo para rolagem */
     }
 
     h1 {
@@ -141,9 +142,7 @@
     <section>
       <h2>👾 Declaração</h2>
       <p>Este aplicativo é desenvolvido de forma independente e não está associado a nenhuma empresa ou organização.</p>
-    </section>
-
-    <a href="#" class="button">Voltar ao Jogo</a>
+    </section>    
 
     <footer>
       <p>© 2025 Todos os direitos reservados.</p>
